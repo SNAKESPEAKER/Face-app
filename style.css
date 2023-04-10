@@ -1,0 +1,19 @@
+.heading{
+ width: 80%;   
+ font-size: 22px;
+}
+
+#camera, #result{
+   border: 2px solid black;
+   width: 350px;
+   height:300px;
+    
+}
+
+body{
+  background: linear-gradient(white 0%, darkgreen 100%) ;
+    }
+
+.B{
+ font-size: 18px;   
+}

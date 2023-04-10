@@ -1,0 +1,58 @@
+ 
+<html>
+  <head>
+    <title>Face recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+<h1 class="btn btn-default heading">FACE RECOGNITION</h1>
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+      <b class="B text-primary" >
+       Dog
+       <hr>
+      Python
+      <hr>
+    Penguin
+      <hr>
+      Giraffe-Crocodile
+        <hr>
+        Teddy Bear
+        <hr>
+      </b>
+
+      <label>Webcam View - </label>
+<div id="camera"></div>
+      <br><br>
+<div id="result"></div>
+      <br><br>
+<button class="btn btn-primary" onclick="TakePic()">Capture Image</button>
+      <br><br>
+<button class="btn btn-success" onclick="IdentifyImg()">Identify Image</button>
+      <br><br>
+
+      <p style="font-size: 22px; font-weight: bolder;" class="text-danger">Object : <span id="object-is"></span> </p>
+      <p style="font-size: 22px; font-weight: bolder;" class="text-danger">Accuracy :  <span id="accuracy-is"></span> </p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
